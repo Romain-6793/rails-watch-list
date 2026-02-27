@@ -1,0 +1,11 @@
+<div>
+    <div class="container">
+            <h1>Your new bookmark</h1>
+            <%= simple_form_for(@bookmark) do |f| %>
+                <%= f.input :comment %>
+                <%= f.association :list %>
+                <%= f.hidden_field :movie_id %>
+                <%= f.submit %>
+            <% end %>
+    </div>
+</div>
